@@ -1,7 +1,3 @@
-pyrogrammod
-tgcrypto
-git
-openai
-google-generativeai
-pillow
-pollinations
+
+heroku3
+pyrogram==2.0.106
