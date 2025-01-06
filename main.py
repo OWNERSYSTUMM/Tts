@@ -1,3 +1,4 @@
+import os
 import re
 import subprocess
 import sys
@@ -39,7 +40,7 @@ async def text_to_speech(client, message):
     try:
         # Generate TTS audio
         tts = gTTS(text=text, lang='pa')
-        audio_file = 'BADUSERBOT_audio.mp3'
+        audio_file = 'Speak_audio.mp3'
         tts.save(audio_file)
         
         # Send the audio file
