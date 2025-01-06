@@ -1,12 +1,27 @@
-{
-    "name": "bot",
+"name": "bot",
     "description": "bot",
     "keywords": [
     "python3",
     "telegram",
     "bot"
     ],
-    "env": {},
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token Get it from @Botfather",
+        "value": "",
+        "required": true
+      }
+      },
     "buildpacks": [
           {
               "url": "heroku/python"
@@ -19,4 +34,4 @@
           }
       ],
       "stack": "container"
-  }
+}
